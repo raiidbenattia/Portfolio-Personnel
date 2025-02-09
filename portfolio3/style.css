@@ -358,7 +358,7 @@ nav .menu .line {
 
 .experience .experience-info div p {
     font-size: 18px;
-    color: #C7C7C7;
+    color: var(--main-color);
 
 }
 

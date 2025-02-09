@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --main-color: #C7C7C7;
+    --second-color: #D3E97A;
+}
+
+body {
+    background-color: #0A0A0A;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 60px;
+}
+
+nav .nav-logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #fff;
+}
+
+nav .menu {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+nav .menu .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.first {
+    transform: rotate(45deg) translate(6px, 3px);
+}
+
+.second {
+    transform: rotate(-45deg) translate(3px, -1px);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px 108px 80px;
+    gap: 80px;
+    border-bottom: 1px solid #484848;
+}
+
+.header .info h1 {
+    font-size: 7.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 6.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.header .info p {
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.header .info .buttons,
+.about .buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header .info .buttons .button-contact,
+.about .buttons .button-contact {
+    padding: 19px 60px 19px 24px;
+    border-radius: 100px;
+    background-color: var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
+
+.header .info .buttons .button-contact .pointe i,
+.about .buttons .button-contact .pointe i {
+    position: absolute;
+    padding: 10px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    right: 5px;
+}
+
+.header .info .buttons i,
+.about .buttons i {
+    font-size: 26px;
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #222222;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 108px;
+    gap: 80px;
+    color: #fff;
+    border-bottom: 1px solid #484848;
+}
+
+.projects .projects-info {
+    width: 600px;
+}
+
+.projects .projects-info h1 {
+    font-size: 76px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+}
+
+.projects .projects-info p {
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.projects-carts {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.projects-carts .cart {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.projects-carts .cart .image {
+    padding: 126px 57px 127px;
+    position: relative;
+    background-color: #1A1A1A;
+    border-radius: 12px;
+}
+
+.projects-carts .cart .image span {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: #0A0A0A;
+}
+
+.projects-carts .cart .cart-text h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+}
+
+.projects-carts .cart .cart-text>p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: var(--main-color);
+    letter-spacing: 2px;
+}
+
+.projects-carts .cart .cart-text .info {
+    margin-bottom: 48px;
+}
+
+.projects-carts .cart .cart-text .info>p {
+    padding: 16px 0;
+    border-bottom: 1px solid #484848;
+}
+
+.projects-carts .cart .cart-text .info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #484848;
+}
+
+.projects-carts .cart .cart-text .link {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--second-color);
+}
+
+.projects-carts .cart .cart-text .link p {
+    display: flex;
+    border-bottom: 2px solid var(--second-color);
+    padding-bottom: 4px;
+    cursor: pointer;
+    align-items: center;
+    gap: 4px;
+}
+
+.projects-carts .cart .cart-text .link p i {
+    font-size: 24px;
+}
+
+.about {
+    padding: 122px 108px 416px;
+    color: #fff;
+    display: flex;
+    border-bottom: 1px solid #484848;
+    justify-content: space-between;
+}
+
+.about h1 {
+    font-size: 101px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    width: 50%;
+}
+
+.about .about-info,
+.experience .experience-info {
+    width: 80%;
+}
+
+.about .about-info h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.about .about-info p {
+    color: var(--main-color);
+    margin-bottom: 53px;
+}
+
+.about .about-info a {
+    color: var(--second-color);
+    padding-bottom: 4px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--second-color);
+}
+
+.about .img-home {
+    display: none;
+}
+
+#About {
+    flex-direction: column;
+    padding: 122px 108px 0;
+}
+
+#About>div {
+    display: flex;
+    align-items: start;
+    margin-bottom: 120px;
+}
+
+#About img {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+#About .capabilities {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: start;
+}
+
+#About .capabilities h1 {
+    width: 100%;
+}
+
+#About .capabilities .capabilities-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+}
+
+#About .capabilities .capabilities-info p {
+    font-size: 18px;
+}
+
+#About .capabilities .capabilities-info .skills {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+#About .capabilities .capabilities-info .skills p {
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 1px solid #484848;
+    cursor: pointer;
+}
+
+.experience {
+    padding: 80px 108px;
+    color: #fff;
+    display: grid;
+    border-bottom: 1px solid #484848;
+    grid-template-columns: 50% auto;
+    align-items: start;
+}
+
+.experience h1 {
+    font-size: 101px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+.experience .experience-info {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 95%;
+}
+
+.experience .experience-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.experience .experience-info div p {
+    font-size: 18px;
+    color: #C7C7C7;
+
+}
+
+.experience .experience-info div .title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.experience .experience-info div .title h2 {
+    font-size: 24px;
+}
+
+.experience .experience-info div .title div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.experience .experience-info div .title div p {
+    color: #D3E97A;
+    font-weight: 600;
+}
+
+.contact {
+    color: #fff;
+    padding: 55px 108px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contact .contact-info {
+    height: 611px;
+    position: relative;
+}
+
+.contact .contact-info h1 {
+    font-size: 76px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+}
+
+.contact .contact-info p {
+    font-size: 18;
+    color: var(--main-color);
+}
+
+.contact .contact-info>p {
+    margin-bottom: 8px;
+}
+
+.contact .contact-info p span {
+    color: #fff;
+    border-bottom: 1px solid var(--second-color);
+    cursor: pointer;
+}
+
+.contact .contact-info .profile {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact .contact-info .profile i {
+    color: var(--second-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact .contact-info .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact .contact-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact .contact-form div label {
+    color: var(--main-color);
+}
+
+.contact .contact-form div input,
+.contact .contact-form div textarea {
+    padding: 12px 16px;
+    background-color: #1A1A1A;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+}
+
+.contact .contact-form div textarea {
+    height: 156px;
+    resize: none;
+}
+
+.contact .contact-form>input {
+    width: fit-content;
+    padding: 19px 40px;
+    border-radius: 100px;
+    background-color: var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* resposive design */
+
+@media (max-width: 430px) {
+    nav {
+        padding: 16px;
+    }
+
+    nav .nav-logo {
+        font-size: 28px;
+    }
+
+    nav .nav-links {
+        display: none;
+        padding-top: 13px;
+    }
+
+    nav .menu {
+        display: flex;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 40px 16px 64px;
+        gap: 64px;
+        border-bottom: 1px solid #484848;
+        flex-direction: column;
+    }
+
+    .header .info h1 {
+        font-size: 60px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 8px;
+        line-height: 4rem;
+    }
+
+    .header .info p {
+        font-size: 17px;
+    }
+
+    .header .image img {
+        width: 343px;
+        height: 400px;
+    }
+
+    .projects {
+        padding: 80px 16px;
+
+    }
+
+    .projects .projects-info {
+        width: auto;
+    }
+
+    .projects .projects-info h1 {
+        font-size: 43px;
+    }
+
+    .projects .projects-info p {
+        font-size: 16px;
+    }
+
+    .projects-carts .cart {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-carts .cart .image {
+        padding: 80px 33px 50px;
+    }
+
+    .projects-carts .cart .image img {
+        width: 300px;
+    }
+
+    .about {
+        padding: 16px;
+        color: #fff;
+        display: flex;
+        border-bottom: 1px solid #484848;
+        justify-items: center;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .about h1,
+    .about .about-info h2 {
+        display: none;
+    }
+
+    .about .img-home {
+        display: block;
+    }
+
+    #About {
+        padding: 80px 16px 64px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #About>div {
+        margin-bottom: 80px;
+        flex-direction: column;
+    }
+
+    #About .about-info p {
+        color: var(--main-color);
+        margin-bottom: 40px;
+        width: 125%;
+    }
+
+    #About h1 {
+        display: block;
+        font-size: 57px;
+        width: 100%;
+    }
+
+    #About h2 {
+        display: block;
+        font-size: 22px;
+        width: 100%;
+    }
+
+    #About .buttons .button-contact {
+        padding: 17px 60px 17px 16px;
+        font-size: 14px;
+    }
+
+    .about .buttons {
+        width: 23rem;
+    }
+
+    #About img {
+        margin-bottom: 80px;
+    }
+
+    #About .capabilities {
+        grid-template-columns: auto;
+    }
+
+    #About .capabilities .capabilities-info .skills p {
+        padding: 10px 20px;
+    }
+
+    .experience {
+        padding: 64px 16px;
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+
+    .experience h1 {
+        font-size: 57px;
+    }
+
+    .experience .experience-info div .title {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding: 64px 16px 170px;
+        grid-template-columns: auto;
+        position: relative;
+    }
+
+
+    .contact .contact-info {
+        height: auto;
+        margin-bottom: 64px;
+        position: unset;
+    }
+
+
+    .contact .contact-info h1 {
+        font-size: 50px;
+    }
+
+    .contact .contact-info .footer {
+        position: absolute;
+        bottom: 64px;
+        left: 18px;
+        margin: 0;
+    }
+
+}
